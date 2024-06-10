@@ -1,0 +1,30 @@
+h1{
+    text-align: center;
+}
+
+.banner-card{
+    position: relative;
+}
+
+.banner-card img{
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+}
+.banner-text{
+    position: absolute;
+    top: 25px;
+    color: #000000;
+    padding: 20px;
+    padding-right: 250px;
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.banner-text h2{
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}

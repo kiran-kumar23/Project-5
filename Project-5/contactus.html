@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Contact US</title>
+        <style>
+            .border{
+            border-style: solid;
+            text-align: center;
+            border-width: 3px;
+            max-width: 400px;
+            background: rgba(217, 213, 222, 0.5);
+            color: black;
+            border-radius: 10px;
+           }
+
+           .border{
+            align-items:center;
+            margin-left: 550px;
+            margin-top: 150px;
+            padding-bottom: 60px;
+           }
+
+           #clip{
+            position: absolute;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+           }
+           .gap{
+            line-height: 30px;
+            font-size: large;
+            text-align: left;
+            padding-left: 20px;
+           }
+
+           .btn{
+            padding: 8px 100px;
+            border-radius: 10px;
+            font-size: large;
+            background-color: rgb(136, 182, 205);
+           }
+           
+           .back{
+            color: blue;
+            font-size: medium;
+           }
+        </style>
+    </head>
+    <body>
+        <form action="con-sucess.html">
+            <video id="clip" autoplay loop  >
+                <source src="C:\Users\Kiran Kumar\Downloads\SnapSave.io-Watch India in 4K _ One-Minute Cinematic Travel Video _ India Places to Visit-(1080p).mp4" type="video/mp4">
+            </video>
+            <div class="border">
+                <h1>CONTACT US</h1><br>
+                <div class="gap">
+                Full Name:<br><input type="text"><br>
+        
+                Phone Number:<br><input type="text"><br>
+        
+                Email:<br><input type="email" name="email"><br>
+                Query:<br>
+                <textarea border="5" cols="35" rows="5" class="msg">Meassage: </textarea><br>
+                </div>
+                <br>
+                <input type="submit" class="btn" >
+                <br>
+                <br>
+                <a href="Index-Page.html" class="back">back to HOME</a>
+            </div>
+        </form>
+    </body>
+</html>

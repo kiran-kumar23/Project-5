@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        .img {
+            position: fixed;
+            background-size: cover;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .border {
+            border: 3px solid black;
+            border-radius: 10px;
+            text-align: center;
+            background-color: rgba(171, 168, 174, 0.5);
+            display: inline-block;
+            margin-top: 170px;
+            margin-left: 510px;
+            padding: 100px 90px;
+            font-size: x-large;
+        }
+        .border{
+            line-height: 30px;
+        }
+        .btn{
+            padding: 5px 50px;
+            background-color: green;
+            color: black;
+            border-radius: 4px;
+        }
+        .in input{
+            padding: 8px; 
+        }
+        #pass{
+            padding-left: 18px;
+        }
+    </style>
+    <script>
+        // User Validations
+        function loginValidation() {
+            var uname = document.myform.username.value;
+            var password = document.myform.password.value;
+            if (uname == null || uname == "") {
+                alert("Username cannot be blank");
+                return false;  
+            } else if (password.length < 6) {
+                alert("Password must be at least 6 characters");
+                return false;
+            }  
+            return true;                
+        }           
+    </script>
+</head>
+<body>
+    <form name="myform" action="login_success.html" onsubmit="return loginValidation()">
+        <img src="Login Flight.jpg" class="img">
+        <div class="border">
+            <div class="in">
+                <h2>Login Page</h2>
+                <label for="username">User Name:</label>
+                <input type="text" id="username" name="username"><br>
+                <label for="password" id="pass">Password:</label>
+                <input type="password" id="password" name="password"><br>
+                <input type="submit" value="Login" class="btn"><br>
+                Don't have account ? |<a href="RegistraionPage_3.html">create now</a><br>
+                <a href="Index-Page.html" class="back">Back to HOME</a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
